@@ -19,7 +19,8 @@ public class SecurityConfig {
                     .authorizeHttpRequests(auth-> auth
                             .requestMatchers(
                                     "/hello",
-                                    "/auth/**"
+                                    "/books/token",
+                                    "/books/validate"
                             ).permitAll()
                             .anyRequest().authenticated()
                     )
