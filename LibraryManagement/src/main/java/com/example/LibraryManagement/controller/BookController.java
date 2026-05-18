@@ -82,7 +82,7 @@ public class BookController {
         return "Invalid Token";
     }
 
-    @GetMapping("/")
+    @GetMapping("/hello")
     public String hello(){
         return "Library management API Running";
     }
