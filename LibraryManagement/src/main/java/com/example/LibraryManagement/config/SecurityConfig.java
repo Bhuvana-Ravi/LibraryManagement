@@ -21,7 +21,9 @@ public class SecurityConfig {
                             .requestMatchers(
                                     "/books/hello",
                                     "/books/token",
-                                    "/books/validate"
+                                    "/books/validate",
+                                    "/swagger-ui/**",
+                                    "/v3/api-docs/**"
                             ).permitAll()
                             .anyRequest().authenticated()
                     )
